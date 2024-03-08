@@ -1,0 +1,33 @@
+#gridContainer{
+    background-color: burlywood;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    max-width: 900px;
+    margin:0 auto;
+    text-align: center;
+    border: 3px solid black;
+    height: 500px;
+    gap:10px;
+}
+#gridContainer > div{
+    background-color: cadetblue;
+    border: 2px dashed violet;
+}
+#gridContainer > div:nth-child(1){
+    grid-column: 1/span 3;
+}
+#gridContainer > div:nth-child(2){
+    grid-column: span 3;
+}
+#gridContainer > div:nth-child(3){
+    grid-column: 2/span 4;
+}
+#gridContainer > div:nth-child(4){
+    grid-column: span 3;
+}
+#gridContainer > div:nth-child(5){
+    grid-column: span 3;
+}
+#gridContainer > div:nth-child(6){
+    grid-column: 2/span 4;
+}
