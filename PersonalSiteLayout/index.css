@@ -1,0 +1,38 @@
+main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+#name{
+    background-color: #4b4a4a;
+    grid-row:span 3;
+    height: 100%;
+}
+#name > p,h3{
+    margin-left:10%;
+    margin-right:10%;
+    color: beige;
+}
+.image{
+    width:100%;
+    height:100%;
+    grid-row: span 2;
+}
+article >img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#hobbies > p{
+    margin-left:10%;
+    margin-right: 10%;
+}
+#abt > p{
+    margin-left:10%;
+    margin-right: 10%;
+}
+#hobbies, #abt{
+    background-color: burlywood;
+    height: 100%;
+}
+
